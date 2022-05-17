@@ -1,16 +1,22 @@
+let playerDecision = prompt("Rock, Paper, or Scissors?").toLowerCase();
+let computerDecision = computerPlay();
+
+
 function computerPlay() {
     switch (randomNumber = Math.floor(Math.random()*3)){
         case 0 :
-            return "Rock";
+            return "rock";
             break;
         case 1 :
-            return "Paper";
+            return "paper";
             break;
         case 2 :
-            return "Scissors";
+            return "scissors";
             break;
     }
     
 }
 
-console.log(computerPlay());
+
+console.log(playerDecision)
+console.log(computerDecision);
